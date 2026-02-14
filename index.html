@@ -3,72 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr Feroz Zuber Shaikh | Medical Tourism</title>
+<title>International Medical Tourism | Mumbai India</title>
+<meta name="description" content="International patient medical facilitation in Mumbai India. Treatment planning, hospital coordination and post treatment care for overseas patients.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,Arial;background:#f5f3ef;color:#2f2f2f;line-height:1.6}
-header{background:#e9e6df;padding:40px 20px;text-align:center}
-h1{margin:0;font-weight:600;color:#2c6b6b}
-h2{color:#2c6b6b}
-section{padding:40px 20px;max-width:900px;margin:auto}
-.card{background:#fff;border-radius:14px;padding:20px;margin:15px 0;box-shadow:0 4px 10px rgba(0,0,0,0.05)}
-.btn{display:inline-block;background:#2c6b6b;color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;margin-top:10px}
+:root{--primary:#2f6f73;--accent:#b79c6b;--bg:#f7f6f3;--text:#333}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:white;padding:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:500}
+.hero{padding:80px 0;text-align:center;background:linear-gradient(180deg,#ffffff,#f1efea)}
+.hero h1{font-size:34px;color:var(--primary);margin-bottom:10px}
+.hero p{max-width:700px;margin:auto}
+.btn{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin-top:20px}
+.section{padding:70px 0}
+.card{background:white;border-radius:14px;padding:25px;margin:15px 0;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.lang-switch{cursor:pointer;padding:6px 12px;border:1px solid #ccc;border-radius:6px}
 .ar{font-family:Cairo, sans-serif;direction:rtl;text-align:right}
-footer{background:#e9e6df;text-align:center;padding:20px;margin-top:30px}
+footer{background:#eae7df;text-align:center;padding:30px;margin-top:50px}
 input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc}
-label{font-weight:600}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:600}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:600}
 </style>
+<script>
+function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>{el.style.display=el.dataset.lang===lang?'block':'none'})}
+window.onload=()=>setLang('en');
+</script>
 </head>
 <body>
 <header>
-<h1>Dr Feroz Zuber Shaikh</h1>
-<p>Medical Tourism Facilitator & Coordinator – Mumbai, India</p>
-<p class="ar">منسق وميسر السياحة العلاجية – مومباي الهند</p>
-<a class="btn" href="https://wa.me/917700913411">Chat on WhatsApp</a>
+<div class="container">
+<nav>
+<div><strong>Medical Concierge Mumbai</strong></div>
+<div>
+<button class="lang-switch" onclick="setLang('en')">EN</button>
+<button class="lang-switch" onclick="setLang('ar')">AR</button>
+</div>
+</nav>
+</div>
 </header>
-<section>
-<h2>About</h2>
-<div class="card">
-<p>End‑to‑end medical facilitation for international patients in India. Connecting you with reputed hospitals and specialists ensuring a transparent and supported treatment journey.</p>
-<p class="ar">نقدم خدمات متكاملة لتنسيق العلاج في الهند وربط المرضى الدوليين بأفضل المستشفيات والأطباء لضمان رحلة علاج واضحة وآمنة.</p>
+<section class="hero">
+<div class="container">
+<div data-lang="en">
+<h1>International Medical Tourism Facilitation</h1>
+<p>We assist international patients in receiving safe, transparent and well coordinated treatment in reputed hospitals across Mumbai, India.</p>
+<a class="btn" href="#contact">Request Consultation</a>
 </div>
-<h2>Specialties</h2>
-<div class="card">
-<ul>
-<li>Cardiac Treatments</li>
-<li>Orthopedic Surgeries</li>
-<li>Cancer Treatment</li>
-<li>Ophthalmology</li>
-</ul>
+<div data-lang="ar" class="ar">
+<h1>تنسيق العلاج الدولي في الهند</h1>
+<p>نساعد المرضى الدوليين للحصول على علاج آمن ومنظم في أفضل مستشفيات مومباي.</p>
+<a class="btn" href="#contact">طلب استشارة</a>
 </div>
-<h2>How It Works</h2>
-<div class="card">
-<p>1. Submit medical reports<br>2. Receive treatment plan & estimate<br>3. Travel coordination<br>4. Treatment & follow‑up</p>
-</div>
-<h2>Submit Medical Case</h2>
-<div class="card">
-<form action="https://formsubmit.co/drferozshaikh@gmail.com" method="POST" enctype="multipart/form-data">
-<input type="hidden" name="_captcha" value="false">
-<label>Name</label>
-<input type="text" name="name" required>
-<label>Country</label>
-<input type="text" name="country" required>
-<label>Medical Condition</label>
-<textarea name="condition" required></textarea>
-<label>Budget (USD)</label>
-<input type="text" name="budget">
-<label>Upload Reports</label>
-<input type="file" name="attachment" multiple>
-<button class="btn" type="submit">Submit Case</button>
-</form>
-</div>
-<h2>Contact</h2>
-<div class="card">
-<p>Phone: +91 7700913411<br>Email: drferozshaikh@gmail.com<br>Location: Mumbai, India</p>
 </div>
 </section>
-<a class="whatsapp" href="https://wa.me/917700913411">WhatsApp</a>
+<section class="section">
+<div class="container">
+<div data-lang="en">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">Hospital & Specialist Coordination</div>
+<div class="card">Treatment Planning & Medical Opinions</div>
+<div class="card">Travel & Accommodation Guidance</div>
+<div class="card">Post Treatment Follow‑up</div>
+</div>
+</div>
+<div data-lang="ar" class="ar">
+<h2>خدماتنا</h2>
+<div class="grid">
+<div class="card">تنسيق المستشفيات والأطباء</div>
+<div class="card">خطة العلاج والاستشارات</div>
+<div class="card">إرشادات السفر والإقامة</div>
+<div class="card">المتابعة بعد العلاج</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div data-lang="en">
+<h2>How It Works</h2>
+<div class="card">1. Share medical reports<br>2. Receive treatment plan<br>3. Travel & treatment<br>4. Recovery & follow‑up</div>
+</div>
+<div data-lang="ar" class="ar">
+<h2>كيف تتم العملية</h2>
+<div class="card">١ إرسال التقارير الطبية<br>٢ استلام الخطة العلاجية<br>٣ السفر والعلاج<br>٤ التعافي والمتابعة</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section">
+<div class="container">
+<div data-lang="en">
+<h2>Submit Medical Case</h2>
+<form action="https://formsubmit.co/youremail@example.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<label>Name</label><input type="text" name="name" required>
+<label>Country</label><input type="text" name="country" required>
+<label>Medical Condition</label><textarea name="condition" required></textarea>
+<label>Google Drive Reports Link</label><input type="text" name="reports">
+<button class="btn" type="submit">Send Request</button>
+</form>
+</div>
+<div data-lang="ar" class="ar">
+<h2>إرسال الحالة الطبية</h2>
+<form action="https://formsubmit.co/youremail@example.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<label>الاسم</label><input type="text" name="name" required>
+<label>الدولة</label><input type="text" name="country" required>
+<label>الحالة الطبية</label><textarea name="condition" required></textarea>
+<label>رابط التقارير الطبية</label><input type="text" name="reports">
+<button class="btn" type="submit">إرسال</button>
+</form>
+</div>
+</div>
+</section>
+<a class="whatsapp" href="https://api.whatsapp.com/send?phone=917700913411">WhatsApp</a>
 <footer>
 <p>Trusted Care • Clear Path • Continuous Support</p>
 </footer>
