@@ -3,34 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Medical Facilitation | Mumbai India</title>
-<meta name="description" content="Independent medical tourism facilitation in Mumbai India. Hospital coordination, treatment planning and patient support.">
+<title>Mumbai Medical Facilitator</title>
+<meta name="description" content="Medical treatment coordination in Mumbai India for international patients. Cardiac, orthopedic, oncology and eye treatment guidance.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--primary:#2f6f73;--accent:#b79c6b;--bg:#f7f6f3;--text:#333}
+:root{--primary:#2f6f73;--accent:#b79c6b;--bg:#f6f5f2;--text:#333}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--text);line-height:1.6}
-header{background:white;padding:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.05);position:sticky;top:0;z-index:1000}
-.container{max-width:1100px;margin:auto;padding:0 20px}
-nav{display:flex;justify-content:space-between;align-items:center}
-nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:500}
-.hero{padding:80px 0;text-align:center;background:linear-gradient(180deg,#ffffff,#f1efea)}
-.hero h1{font-size:34px;color:var(--primary);margin-bottom:10px}
-.hero p{max-width:750px;margin:auto}
-.btn{display:inline-block;background:var(--primary);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin-top:20px}
-.section{padding:70px 0}
-.card{background:white;border-radius:14px;padding:25px;margin:15px 0;box-shadow:0 4px 12px rgba(0,0,0,.05)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.lang-switch{cursor:pointer;padding:6px 12px;border:1px solid #ccc;border-radius:6px}
+body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--text)}
+header{background:white;box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:10}
+.container{max-width:1100px;margin:auto;padding:0 18px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+nav a{margin-left:18px;text-decoration:none;color:#444;font-weight:500;font-size:14px}
+.hero{padding:70px 0;text-align:center;background:linear-gradient(#fff,#efede7)}
+.hero h1{color:var(--primary);font-size:30px;margin-bottom:10px}
+.hero p{max-width:700px;margin:auto}
+.btn{background:var(--primary);color:#fff;padding:11px 18px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:18px}
+.section{padding:60px 0}
+.section h2{margin-bottom:20px;color:var(--primary)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,.05);font-size:14px}
+.badge{font-size:12px;color:var(--accent);font-weight:600}
+img{width:100%;border-radius:12px}
+.small{font-size:12px;color:#777}
+input,textarea{width:100%;padding:10px;margin:7px 0;border-radius:6px;border:1px solid #ccc}
+.whatsapp{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;padding:13px 16px;border-radius:40px;text-decoration:none;font-weight:600;font-size:14px}
+.lang-switch{border:1px solid #ccc;background:#fff;border-radius:6px;padding:4px 8px;margin-left:6px;cursor:pointer}
 .ar{font-family:Cairo, sans-serif;direction:rtl;text-align:right}
-footer{background:#eae7df;text-align:center;padding:30px;margin-top:50px}
-input,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:600}
-img{width:100%;border-radius:14px}
-.small{font-size:13px;color:#777}
+footer{background:#eae7df;text-align:center;padding:28px;margin-top:40px;font-size:14px}
 </style>
 <script>
-function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>{el.style.display=el.dataset.lang===lang?'block':'none'})}
+function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>el.style.display=el.dataset.lang===lang?'block':'none')}
 window.onload=()=>setLang('en');
 </script>
 </head>
@@ -38,8 +40,11 @@ window.onload=()=>setLang('en');
 <header>
 <div class="container">
 <nav>
-<div><strong>Mumbai Medical Concierge</strong></div>
+<strong>Mumbai Medical Concierge</strong>
 <div>
+<a href="#treatments">Treatments</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
 <button class="lang-switch" onclick="setLang('en')">EN</button>
 <button class="lang-switch" onclick="setLang('ar')">AR</button>
 </div>
@@ -50,40 +55,54 @@ window.onload=()=>setLang('en');
 <section class="hero">
 <div class="container">
 <div data-lang="en">
-<h1>Independent Medical Facilitation in Mumbai</h1>
-<p>We assist international patients in understanding treatment options, coordinating consultations and supporting them throughout their medical journey in India.</p>
-<a class="btn" href="#contact">Request Guidance</a>
+<h1>Medical Treatment Guidance in Mumbai</h1>
+<p>Independent coordination helping international patients understand treatment choices, consult specialists and navigate hospitals in Mumbai India.</p>
+<a class="btn" href="#contact">Request Medical Guidance</a>
 </div>
 <div data-lang="ar" class="ar">
-<h1>تنسيق العلاج في مومباي</h1>
-<p>نساعد المرضى الدوليين في فهم خيارات العلاج وتنظيم الاستشارات والمتابعة طوال الرحلة العلاجية في الهند.</p>
-<a class="btn" href="#contact">طلب المساعدة</a>
+<h1>الإرشاد العلاجي في مومباي</h1>
+<p>تنسيق مستقل لمساعدة المرضى الدوليين على فهم خيارات العلاج والتواصل مع الأطباء في مومباي.</p>
+<a class="btn" href="#contact">طلب استشارة</a>
+</div>
+</div>
+</section>
+
+<section id="treatments" class="section">
+<div class="container">
+<h2>Treatment Guidance</h2>
+<div class="grid">
+<div class="card"><span class="badge">Cardiac</span><br>Angiography • Angioplasty • Bypass Surgery • Valve Replacement</div>
+<div class="card"><span class="badge">Orthopedic</span><br>Knee & Hip Replacement • Spine Surgery • Arthroscopy</div>
+<div class="card"><span class="badge">Oncology</span><br>Chemotherapy • Surgical Planning • Second Opinion</div>
+<div class="card"><span class="badge">Ophthalmology</span><br>Cataract • Retina • Glaucoma</div>
+<div class="card"><span class="badge">General Surgery</span><br>Gallbladder • Hernia • Appendix</div>
+<div class="card"><span class="badge">Health Check</span><br>Executive preventive screening packages</div>
 </div>
 </div>
 </section>
 
 <section class="section">
 <div class="container">
-<h2>Hospitals We Facilitate</h2>
+<h2>Hospitals in Mumbai</h2>
 <div class="grid">
 <div class="card">Bhatia Hospital</div>
 <div class="card">Saifee Hospital</div>
 <div class="card">Breach Candy Hospital</div>
 <div class="card">Jaslok Hospital</div>
 </div>
-<p class="small">We are an independent coordinator and not an employee of these hospitals.</p>
+<p class="small">Independent coordination support — not employed by hospitals</p>
 </div>
 </section>
 
-<section class="section">
+<section id="process" class="section">
 <div class="container">
-<h2>Our Role</h2>
+<h2>How The Process Works</h2>
 <div class="grid">
-<div class="card">Understanding your reports</div>
-<div class="card">Connecting to suitable specialists</div>
-<div class="card">Appointment scheduling</div>
-<div class="card">Guidance during stay</div>
-<div class="card">Follow‑up communication</div>
+<div class="card">Send medical reports</div>
+<div class="card">Understand treatment options</div>
+<div class="card">Plan travel & appointments</div>
+<div class="card">Treatment & recovery</div>
+<div class="card">Post treatment follow‑up</div>
 </div>
 </div>
 </section>
@@ -92,11 +111,10 @@ window.onload=()=>setLang('en');
 <div class="container">
 <h2>Mumbai Care Environment</h2>
 <div class="grid">
-<div><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Hospital environment"></div>
-<div><img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29" alt="Consultation"></div>
-<div><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67" alt="City of Mumbai"></div>
+<img src="https://images.unsplash.com/photo-1580281657527-47b9d7c7a8b5?auto=format&fit=crop&w=800&q=60">
+<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=60">
+<img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=800&q=60">
 </div>
-<p class="small">Images are illustrative to help patients understand environment.</p>
 </div>
 </section>
 
@@ -108,15 +126,15 @@ window.onload=()=>setLang('en');
 <label>Name</label><input type="text" name="name" required>
 <label>Country</label><input type="text" name="country" required>
 <label>Medical Condition</label><textarea name="condition" required></textarea>
-<label>Reports (Google Drive Link)</label><input type="text" name="reports">
+<label>Reports Link (Google Drive)</label><input type="text" name="reports">
 <button class="btn" type="submit">Send Request</button>
 </form>
 </div>
 </section>
 
-<a class="whatsapp" href="https://api.whatsapp.com/send?phone=917700913411&text=Hello%20I%20need%20medical%20guidance">WhatsApp</a>
+<a class="whatsapp" href="https://api.whatsapp.com/send?phone=917700913411&text=Hello%20I%20would%20like%20medical%20consultation">WhatsApp</a>
 <footer>
-<p>Independent Medical Facilitator • Mumbai India</p>
+<p>Mumbai India • Independent Medical Facilitator</p>
 </footer>
 </body>
 </html>
