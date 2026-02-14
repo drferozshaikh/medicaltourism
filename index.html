@@ -3,108 +3,285 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mumbai Medical Facilitator</title>
-<meta name="description" content="Medical treatment coordination in Mumbai India for international patients. Cardiac, orthopedic, oncology and eye treatment guidance.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<title>International Medical Treatment Guidance</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--primary:#2f6f73;--accent:#b79c6b;--bg:#f6f5f2;--text:#333}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,Arial;background:linear-gradient(180deg,#ffffff,#f2f1ec);color:var(--text)}
-header{background:white;box-shadow:0 2px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:10}
-.container{max-width:1100px;margin:auto;padding:0 18px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-nav a{margin-left:18px;text-decoration:none;color:#444;font-weight:500;font-size:14px}
-.hero{padding:90px 0;text-align:center;background:radial-gradient(circle at 30% 20%,#f9f8f5,#ece9e2)}
-.hero h1{color:var(--primary);font-size:32px;margin-bottom:10px}
-.hero p{max-width:700px;margin:auto}
-.btn{background:var(--primary);color:#fff;padding:11px 18px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:18px}
-.section{padding:60px 0}
-.section h2{margin-bottom:20px;color:var(--primary)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 3px 8px rgba(0,0,0,.05);font-size:14px}
-.badge{font-size:12px;color:var(--accent);font-weight:600}
-.small{font-size:12px;color:#777}
-input,textarea{width:100%;padding:10px;margin:7px 0;border-radius:6px;border:1px solid #ccc}
-.whatsapp{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;padding:13px 16px;border-radius:40px;text-decoration:none;font-weight:600;font-size:14px}
-.lang-switch{border:1px solid #ccc;background:#fff;border-radius:6px;padding:4px 8px;margin-left:6px;cursor:pointer}
-.ar{font-family:Cairo, sans-serif;direction:rtl;text-align:right}
-footer{background:#eae7df;text-align:center;padding:28px;margin-top:40px;font-size:14px}
-.icon{width:100%;height:120px;background:linear-gradient(135deg,#f1efe8,#e4e1d9);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:32px;color:#b79c6b}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+header h2 {
+  color: #0b5ed7;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0b5ed7;
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(rgba(11,94,215,0.7), rgba(11,94,215,0.7)),
+  url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 12px 25px;
+  background: white;
+  color: #0b5ed7;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background: #e0eaff;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 40px;
+  color: #0b5ed7;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* COST */
+.cost-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cost-card {
+  background: #0b5ed7;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* CONTACT */
+#contact {
+  background: #0b5ed7;
+  color: white;
+}
+
+#contact a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #072c6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+  }
+}
 </style>
-<script>
-function setLang(lang){document.querySelectorAll('[data-lang]').forEach(el=>el.style.display=el.dataset.lang===lang?'block':'none')}
-window.onload=()=>setLang('en');
-</script>
 </head>
+
 <body>
+
 <header>
-<div class="container">
-<nav>
-<strong>Mumbai Medical Concierge</strong>
-<div>
-<a href="#treatments">Treatments</a>
-<a href="#journey">Journey</a>
-<a href="#cost">Cost</a>
-<a href="#contact">Contact</a>
-<button class="lang-switch" onclick="setLang('en')">EN</button>
-<button class="lang-switch" onclick="setLang('ar')">AR</button>
-</div>
-</nav>
-</div>
+  <h2>Medical Pathway India</h2>
+  <nav>
+    <a href="#treatments">Treatments</a>
+    <a href="#journey">Journey</a>
+    <a href="#cost">Costs</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section class="hero">
-<div class="container">
-<div data-lang="en">
-<h1>Medical Treatment Guidance in Mumbai</h1>
-<p>Independent coordination helping international patients understand treatment choices, consult specialists and navigate hospitals in Mumbai India.</p>
-<a class="btn" href="#contact">Request Medical Guidance</a>
-</div>
-<div data-lang="ar" class="ar">
-<h1>الإرشاد العلاجي في مومباي</h1>
-<p>تنسيق مستقل لمساعدة المرضى الدوليين على فهم خيارات العلاج والتواصل مع الأطباء في مومباي.</p>
-<a class="btn" href="#contact">طلب استشارة</a>
-</div>
-</div>
+<section id="hero">
+  <h1>Trusted Medical Treatment Guidance in India</h1>
+  <p>Complete coordination from reports to recovery — for international patients</p>
+  <a href="#contact" class="cta-btn">Send Reports</a>
+  <a href="https://api.whatsapp.com/send?phone=YOURNUMBER" class="cta-btn">WhatsApp Now</a>
 </section>
 
-<section id="treatments" class="section">
-<div class="container">
-<h2>Treatment Guidance</h2>
-<div class="grid">
-<div class="card"><div class="icon">❤</div><span class="badge">Cardiac</span><br>Angiography • Angioplasty • Bypass • Valve Surgery</div>
-<div class="card"><div class="icon">🦴</div><span class="badge">Orthopedic</span><br>Knee & Hip Replacement • Spine</div>
-<div class="card"><div class="icon">🧬</div><span class="badge">Oncology</span><br>Cancer consultation & planning</div>
-<div class="card"><div class="icon">👁</div><span class="badge">Eye</span><br>Cataract • Retina • Glaucoma</div>
-</div>
-</div>
+<section id="treatments">
+  <h2>Specialized Treatment Areas</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Cardiac Care</h3>
+      <p>Bypass, Angioplasty, Valve Surgery</p>
+    </div>
+    <div class="card">
+      <h3>Orthopedic Surgery</h3>
+      <p>Knee Replacement, Spine, Trauma</p>
+    </div>
+    <div class="card">
+      <h3>Oncology</h3>
+      <p>Cancer Planning & Hospital Coordination</p>
+    </div>
+    <div class="card">
+      <h3>Eye Treatments</h3>
+      <p>Cataract, Retina, Laser</p>
+    </div>
+  </div>
 </section>
 
-<section id="journey" class="section">
-<div class="container">
-<h2>Patient Journey</h2>
-<div class="grid">
-<div class="card">1. Share medical reports</div>
-<div class="card">2. Doctor opinion & plan</div>
-<div class="card">3. Visa & travel planning</div>
-<div class="card">4. Treatment in Mumbai</div>
-<div class="card">5. Recovery & follow up</div>
-</div>
-</div>
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div class="feature">Transparent Cost Guidance</div>
+    <div class="feature">Experienced Specialists</div>
+    <div class="feature">Visa & Travel Support</div>
+    <div class="feature">Complete Case Coordination</div>
+  </div>
 </section>
 
-<section id="cost" class="section">
-<div class="container">
-<h2>Estimated Cost Guide</h2>
-<div class="grid">
-<div class="card"><strong>Heart Procedures</strong><br>$3500 – $7000 approx</div>
-<div class="card"><strong>Knee Replacement</strong><br>$4000 – $6500 approx</div>
-<div class="card"><strong>Cataract</strong><br>$700 – $1500 approx</div>
-<div class="card"><strong>Health Check</strong><br>$150 – $400 approx</div>
-</div>
-<p class="small">Final treatment cost depends on doctor evaluation & hospital stay.</p>
-</div>
+<section id="journey">
+  <h2>Patient Journey</h2>
+  <div class="timeline">
+    <div class="step">📤 Send Reports</div>
+    <div class="step">🩺 Doctor Review</div>
+    <div class="step">🛂 Visa & Travel</div>
+    <div class="step">🏥 Treatment</div>
+    <div class="step">✈️ Return Home</div>
+  </div>
 </section>
+
+<section id="cost">
+  <h2>Estimated Cost Guide</h2>
+  <div class="cost-cards">
+    <div class="cost-card">Heart Surgery<br>$3,500 – $7,000</div>
+    <div class="cost-card">Knee Replacement<br>$4,000 – $6,500</div>
+    <div class="cost-card">Cataract<br>$700 – $1,500</div>
+    <div class="cost-card">Health Check<br>$150 – $400</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: your@email.com</p>
+  <p>WhatsApp: <a href="https://api.whatsapp.com/send?phone=YOURNUMBER">Chat Now</a></p>
+</section>
+
+<footer>
+  © 2026 Medical Pathway India | All Rights Reserved
+</footer>
+
+</body>
+</html></section>
 
 <section id="contact" class="section">
 <div class="container">
