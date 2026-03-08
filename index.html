@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>International Patient Guidance | Mumbai India</title>
-<meta name="description" content="Independent guidance for international patients seeking medical treatment in Mumbai India. Consultation coordination, hospital navigation and follow-up care.">
+<title>International Patient Medical Guidance | Mumbai India</title>
+<meta name="description" content="Independent medical facilitation for international patients seeking treatment in Mumbai India. Specialist consultations, hospital coordination and post treatment follow up.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 :root{
---primary:#0f4c5c;
+--primary:#0c4a5a;
 --secondary:#1b6f7a;
---accent:#e7c9a9;
---light:#f6f7f9;
---text:#2c2c2c
+--accent:#d9c3a3;
+--light:#f5f7fa;
+--dark:#1e2a32
 }
 
 *{box-sizing:border-box}
@@ -23,180 +23,83 @@ body{
 margin:0;
 font-family:Inter,Arial;
 background:var(--light);
-color:var(--text);
-line-height:1.6
+color:var(--dark);
 }
 
-.container{
-max-width:1150px;
-margin:auto;
-padding:0 20px
-}
+.container{max-width:1200px;margin:auto;padding:0 22px}
 
 header{
-background:#ffffff;
+background:white;
 border-bottom:1px solid #e6e6e6;
 position:sticky;
 top:0;
-z-index:10
+z-index:1000
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0
-}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
 
-nav a{
-margin-left:20px;
-text-decoration:none;
-color:#444;
-font-size:14px;
-font-weight:500
-}
+.logo{font-weight:600;font-size:20px;color:var(--primary)}
 
-.logo{
-font-weight:600;
-font-size:18px;
-color:var(--primary)
-}
+nav a{margin-left:20px;text-decoration:none;color:#444;font-size:14px}
+
+.lang-switch{border:1px solid #ddd;background:white;padding:6px 10px;border-radius:6px;margin-left:6px;cursor:pointer}
 
 .hero{
-background:linear-gradient(rgba(15,76,92,.85),rgba(15,76,92,.85)),
-url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1400");
-background-size:cover;
-background-position:center;
-color:white;
-padding:120px 0;
-text-align:center
+background:linear-gradient(rgba(12,74,90,.85),rgba(12,74,90,.85)),
+url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Mumbai_skyline_BWSL.jpg");
+background-size:cover;background-position:center;color:white;padding:130px 0;text-align:center
 }
 
-.hero h1{
-font-size:36px;
-margin-bottom:15px
-}
+.hero h1{font-size:38px;margin-bottom:15px}
+.hero p{max-width:750px;margin:auto}
 
-.hero p{
-max-width:700px;
-margin:auto;
-opacity:.95
-}
+.btn{background:white;color:var(--primary);padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;margin-top:28px}
 
-.btn{
-background:white;
-color:var(--primary);
-padding:13px 22px;
-border-radius:6px;
-display:inline-block;
-margin-top:25px;
-text-decoration:none;
-font-weight:600
-}
+.section{padding:80px 0}
+.section h2{text-align:center;color:var(--primary);margin-bottom:45px}
 
-.section{
-padding:70px 0
-}
-
-.section h2{
-text-align:center;
-margin-bottom:40px;
-color:var(--primary)
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:20px
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
 
 .card{
-background:white;
-padding:22px;
-border-radius:8px;
-border:1px solid #e9e9e9
+background:white;padding:26px;border-radius:10px;border:1px solid #e9e9e9;transition:.25s;cursor:pointer
 }
 
-.card h3{
-margin-top:0;
-color:var(--secondary)
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(0,0,0,.08)
 }
 
-.image-grid img{
-width:100%;
-border-radius:8px;
-height:220px;
-object-fit:cover
+.card h3{margin-top:0;color:var(--secondary)}
+
+.hospital img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:12px}
+
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.step{
+background:white;border-left:4px solid var(--secondary);padding:22px;border-radius:6px
 }
 
-.process-step{
-background:white;
-padding:20px;
-border-left:4px solid var(--secondary)
-}
+.image-grid img{width:100%;height:240px;object-fit:cover;border-radius:8px}
 
 form{
-background:white;
-padding:30px;
-border-radius:10px;
-border:1px solid #e7e7e7;
-max-width:650px;
-margin:auto
+background:white;padding:34px;border-radius:10px;border:1px solid #e5e5e5;max-width:700px;margin:auto
 }
 
 input,textarea,select{
-width:100%;
-padding:12px;
-border:1px solid #dcdcdc;
-border-radius:6px;
-margin-bottom:15px;
-font-size:14px
+width:100%;padding:13px;border:1px solid #dcdcdc;border-radius:6px;margin-bottom:15px;font-size:14px
 }
 
 button{
-background:var(--secondary);
-color:white;
-border:none;
-padding:13px 20px;
-border-radius:6px;
-font-weight:600;
-cursor:pointer
+background:var(--secondary);color:white;border:none;padding:14px 22px;border-radius:6px;font-weight:600;cursor:pointer
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:14px 18px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600
-}
+.whatsapp{position:fixed;bottom:22px;right:22px;background:#25D366;color:white;padding:15px 20px;border-radius:40px;text-decoration:none;font-weight:600}
 
-footer{
-background:#0f4c5c;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px
-}
+footer{background:#0c4a5a;color:white;text-align:center;padding:40px;margin-top:70px}
 
-.ar{
-font-family:"Noto Naskh Arabic",serif;
-direction:rtl;
-text-align:right
-}
+.disclaimer{font-size:12px;opacity:.85;max-width:900px;margin:20px auto}
 
-.lang-btn{
-border:1px solid #ddd;
-background:white;
-padding:5px 10px;
-border-radius:5px;
-margin-left:5px;
-cursor:pointer
-}
+.ar{font-family:"Noto Naskh Arabic";direction:rtl;text-align:right}
 
 </style>
 
@@ -218,11 +121,12 @@ window.onload=()=>setLang('en')
 <div class="logo">Mumbai International Patient Guide</div>
 <div>
 <a href="#services">Services</a>
+<a href="#hospitals">Hospitals</a>
 <a href="#process">Process</a>
 <a href="#specialties">Specialties</a>
 <a href="#contact">Contact</a>
-<button class="lang-btn" onclick="setLang('en')">EN</button>
-<button class="lang-btn" onclick="setLang('ar')">AR</button>
+<button class="lang-switch" onclick="setLang('en')">EN</button>
+<button class="lang-switch" onclick="setLang('ar')">AR</button>
 </div>
 </nav>
 </div>
@@ -230,17 +134,19 @@ window.onload=()=>setLang('en')
 
 <section class="hero">
 <div class="container">
+
 <div data-lang="en">
-<h1>Guidance for International Patients Seeking Treatment in Mumbai</h1>
-<p>Independent coordination helping overseas patients understand treatment options, connect with specialists and plan their medical visit to Mumbai India.</p>
-<a class="btn" href="#contact">Request Medical Review</a>
+<h1>Medical Treatment Guidance in Mumbai for International Patients</h1>
+<p>Independent assistance helping overseas patients understand treatment options, connect with experienced specialists and plan their medical visit to Mumbai India.</p>
+<a class="btn" href="#contact">Request Case Review</a>
 </div>
 
 <div data-lang="ar" class="ar">
 <h1>الإرشاد الطبي للمرضى الدوليين في مومباي</h1>
-<p>نساعد المرضى الدوليين على فهم خيارات العلاج والتواصل مع الأطباء في مومباي وتنظيم رحلتهم العلاجية.</p>
-<a class="btn" href="#contact">طلب استشارة</a>
+<p>مساعدة المرضى الدوليين على فهم خيارات العلاج والتواصل مع الأطباء في مستشفيات مومباي.</p>
+<a class="btn" href="#contact">طلب مراجعة الحالة</a>
 </div>
+
 </div>
 </section>
 
@@ -248,23 +154,75 @@ window.onload=()=>setLang('en')
 <div class="container">
 <h2>Patient Assistance Services</h2>
 <div class="grid">
-<div class="card"><h3>Medical Case Review</h3><p>Review of medical reports and guidance on possible treatment pathways.</p></div>
-<div class="card"><h3>Doctor Consultation Coordination</h3><p>Appointments with experienced specialists across major Mumbai hospitals.</p></div>
-<div class="card"><h3>Travel Guidance</h3><p>Support with understanding travel, stay duration and hospital scheduling.</p></div>
-<div class="card"><h3>Post Treatment Follow-up</h3><p>Communication support after returning home for follow-up consultations.</p></div>
+
+<div class="card">
+<h3>Medical Case Review</h3>
+<p>Review of medical reports and preliminary understanding of treatment pathways before travelling.</p>
+</div>
+
+<div class="card">
+<h3>Specialist Consultation</h3>
+<p>Coordination of consultations with experienced specialists in leading hospitals across Mumbai.</p>
+</div>
+
+<div class="card">
+<h3>Travel Planning Guidance</h3>
+<p>Guidance on travel timing, hospital appointments and expected treatment duration.</p>
+</div>
+
+<div class="card">
+<h3>Follow-up Communication</h3>
+<p>Assistance in maintaining communication with doctors after returning home.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="hospitals" class="section">
+<div class="container">
+<h2>Hospitals in Mumbai</h2>
+<div class="grid hospital">
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Saifee_Hospital_Mumbai.jpg">
+<h3>Saifee Hospital</h3>
+<p>Multispecialty hospital in South Mumbai offering advanced diagnostics and surgical services.</p>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Jaslok_Hospital.jpg">
+<h3>Jaslok Hospital</h3>
+<p>Established tertiary care hospital with strong departments in cardiology and neurosurgery.</p>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Breach_Candy_Hospital.jpg">
+<h3>Breach Candy Hospital</h3>
+<p>Well known private hospital in South Mumbai with experienced specialists across multiple disciplines.</p>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Bhatia_Hospital_Mumbai.jpg">
+<h3>Bhatia Hospital</h3>
+<p>Multi specialty hospital providing medical and surgical services for a wide range of conditions.</p>
+</div>
+
 </div>
 </div>
 </section>
 
 <section id="process" class="section">
 <div class="container">
-<h2>How International Treatment Planning Works</h2>
-<div class="grid">
-<div class="process-step">Share medical reports and medical history.</div>
-<div class="process-step">Receive specialist opinion and suggested plan.</div>
-<div class="process-step">Plan travel and hospital consultation.</div>
-<div class="process-step">Treatment and recovery in Mumbai.</div>
-<div class="process-step">Online follow-up after returning home.</div>
+<h2>International Patient Journey</h2>
+<div class="timeline">
+
+<div class="step">Share medical reports and clinical history.</div>
+<div class="step">Receive specialist opinion and suggested treatment approach.</div>
+<div class="step">Plan travel and hospital consultation schedule.</div>
+<div class="step">Consultation, diagnostics and treatment.</div>
+<div class="step">Return home with follow-up communication support.</div>
+
 </div>
 </div>
 </section>
@@ -273,10 +231,27 @@ window.onload=()=>setLang('en')
 <div class="container">
 <h2>Medical Specialties</h2>
 <div class="grid">
-<div class="card"><h3>Cardiology</h3><p>Evaluation and treatment planning for heart conditions.</p></div>
-<div class="card"><h3>Orthopedic Surgery</h3><p>Consultations for joint replacement and spine procedures.</p></div>
-<div class="card"><h3>Oncology</h3><p>Specialist consultations for cancer diagnosis and treatment planning.</p></div>
-<div class="card"><h3>Ophthalmology</h3><p>Eye care including cataract and retina procedures.</p></div>
+
+<div class="card">
+<h3>Cardiology</h3>
+<p>Consultations for coronary artery disease, heart valve conditions and cardiac procedures.</p>
+</div>
+
+<div class="card">
+<h3>Orthopedic Surgery</h3>
+<p>Evaluation for joint replacement, spine disorders and sports injuries.</p>
+</div>
+
+<div class="card">
+<h3>Oncology</h3>
+<p>Consultations regarding cancer diagnosis, treatment planning and multidisciplinary care.</p>
+</div>
+
+<div class="card">
+<h3>Ophthalmology</h3>
+<p>Eye care consultations including cataract surgery and retinal conditions.</p>
+</div>
+
 </div>
 </div>
 </section>
@@ -285,9 +260,9 @@ window.onload=()=>setLang('en')
 <div class="container">
 <h2>Mumbai Healthcare Environment</h2>
 <div class="grid image-grid">
-<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200">
-<img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?q=80&w=1200">
-<img src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=1200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Mumbai_skyline_BWSL.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Marine_Drive_Mumbai.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Chhatrapati_Shivaji_Maharaj_International_Airport.jpg">
 </div>
 </div>
 </section>
@@ -303,30 +278,46 @@ window.onload=()=>setLang('en')
 
 <select name="country" required>
 <option value="">Country of Residence</option>
-<option>Africa</option>
-<option>UAE</option>
+<option>United Arab Emirates</option>
 <option>Saudi Arabia</option>
 <option>Oman</option>
 <option>Qatar</option>
+<option>Nigeria</option>
+<option>Kenya</option>
 <option>Other</option>
 </select>
 
-<input type="text" name="age" placeholder="Patient Age">
+<input type="number" name="age" placeholder="Patient Age">
 
 <textarea name="condition" placeholder="Brief description of medical condition"></textarea>
 
-<input type="text" name="reports" placeholder="Google Drive / Dropbox link for medical reports">
+<input type="text" name="reports" placeholder="Link to medical reports (Google Drive / Dropbox)">
+
+<select name="contact">
+<option>Preferred Contact Method</option>
+<option>WhatsApp</option>
+<option>Email</option>
+</select>
 
 <button type="submit">Submit Medical Inquiry</button>
 
 </form>
+
 </div>
 </section>
 
-<a class="whatsapp" href="https://api.whatsapp.com/send?phone=917700913411&text=Hello%20I%20would%20like%20medical%20guidance">WhatsApp</a>
+<a class="whatsapp" href="https://api.whatsapp.com/send?phone=917700913411">WhatsApp</a>
 
 <footer>
+
 <p>Independent Medical Facilitation – Mumbai India</p>
+
+<div class="disclaimer">
+This website provides general guidance for international patients considering medical consultation in Mumbai India. Final diagnosis and treatment decisions are made directly by licensed medical practitioners and hospitals after clinical evaluation.
+<br><br>
+This platform provides coordination and informational assistance only and does not replace professional medical advice.
+</div>
+
 </footer>
 
 </body>
