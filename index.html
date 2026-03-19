@@ -1,206 +1,79 @@
+<!-- ========================= -->
+<!-- FILE: index.html (HOME)  -->
+<!-- ========================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mumbai Medical Treatment for International Patients</title>
+<title>Mumbai International Patient Services</title>
 <meta name="description" content="Medical consultation coordination in Mumbai India for international patients seeking cardiology, orthopedic, oncology and eye treatments.">
-<meta name="keywords" content="medical treatment india, mumbai hospitals treatment, cardiology india, knee replacement india, cancer treatment mumbai">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{
---primary:#0a3a5a;
---secondary:#1e6f8b;
---accent:#e6b86a;
---bg:#f4f7fb;
---text:#1e2a33
-}
-
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--text)}
-
-.container{max-width:1200px;margin:auto;padding:0 20px}
-
-header{background:white;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:1000}
-nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-
-.logo{font-size:20px;font-weight:600;color:var(--primary)}
-
-.menu a{margin-left:18px;text-decoration:none;color:#333;font-size:14px}
-
-.lang button{background:var(--secondary);color:white;border:none;padding:6px 10px;border-radius:4px;margin-left:6px}
-
-.hero{
-background:linear-gradient(rgba(10,58,90,.85),rgba(10,58,90,.85)),url("https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg");
-background-size:cover;background-position:center;color:white;padding:140px 0;text-align:center
-}
-
-.hero h1{font-size:42px;margin-bottom:12px}
-.hero p{max-width:720px;margin:auto;font-size:18px}
-
-.btn{background:var(--accent);color:black;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;margin-top:25px}
-
+body{margin:0;font-family:Inter,Arial;background:#f4f7fb;color:#1e2a33}
+header{background:#fff;padding:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav a{margin-left:18px;text-decoration:none;color:#333;font-size:14px}
+.hero{background:url("https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg") center/cover no-repeat;padding:140px 20px;color:white;text-align:center}
+.hero h1{font-size:40px;margin-bottom:10px}
+.btn{background:#e6b86a;color:black;padding:14px 28px;border-radius:6px;text-decoration:none;display:inline-block;margin-top:20px}
 .section{padding:70px 0}
-.section h2{text-align:center;margin-bottom:40px;color:var(--primary)}
-
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
-
-.card{background:white;padding:25px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06);transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.15)}
-
-.card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:10px}
-
-.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
-.step{background:white;padding:20px;border-top:4px solid var(--secondary);border-radius:6px}
-
-footer{background:var(--primary);color:white;text-align:center;padding:40px;margin-top:60px}
-
-.ar{font-family:"Noto Naskh Arabic";direction:rtl;text-align:right}
-
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:white;padding:24px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.card img{width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+footer{background:#0a3a5a;color:white;text-align:center;padding:30px;margin-top:60px}
 </style>
-
-<script>
-function setLang(lang){
- document.querySelectorAll('[data-lang]').forEach(el=>{
-  el.style.display = el.dataset.lang===lang ? 'block':'none'
- })
-}
-window.onload=()=>setLang('en')
-</script>
-
 </head>
-
 <body>
-
 <header>
 <div class="container">
 <nav>
-<div class="logo">Mumbai International Patient Services</div>
-
-<div style="display:flex;align-items:center">
-<div class="menu">
+<strong>Mumbai Patient Services</strong>
+<div>
 <a href="index.html">Home</a>
 <a href="treatments.html">Treatments</a>
 <a href="hospitals.html">Hospitals</a>
-<a href="process.html">Patient Journey</a>
+<a href="process.html">Process</a>
 <a href="contact.html">Contact</a>
 </div>
-
-<div class="lang">
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('ar')">AR</button>
-</div>
-</div>
-
 </nav>
 </div>
 </header>
-
 <section class="hero">
-<div class="container">
-
-<div data-lang="en">
 <h1>Medical Treatment Guidance in Mumbai</h1>
-<p>Helping international patients connect with experienced specialists and leading hospitals in Mumbai India for consultation and treatment planning.</p>
+<p>Helping international patients connect with specialists and hospitals in Mumbai.</p>
 <a class="btn" href="contact.html">Submit Medical Case</a>
-</div>
-
-<div data-lang="ar" class="ar">
-<h1>الإرشاد الطبي للمرضى الدوليين في مومباي</h1>
-<p>تنسيق الاستشارات الطبية للمرضى الدوليين في مستشفيات مومباي.</p>
-<a class="btn" href="contact.html">إرسال الحالة</a>
-</div>
-
-</div>
 </section>
-
 <section class="section">
 <div class="container">
 <h2>Medical Specialties</h2>
 <div class="grid">
-
 <div class="card">
 <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg">
 <h3>Cardiology</h3>
-<p>Consultations for coronary artery disease, angioplasty and heart surgery planning.</p>
+<p>Consultations for heart disease, angioplasty and cardiac surgery planning.</p>
 </div>
-
 <div class="card">
 <img src="https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg">
 <h3>Orthopedic Surgery</h3>
-<p>Evaluation for knee replacement, hip replacement and spine surgery.</p>
+<p>Knee replacement, hip replacement and spine surgery consultations.</p>
 </div>
-
 <div class="card">
 <img src="https://images.pexels.com/photos/4226766/pexels-photo-4226766.jpeg">
 <h3>Oncology</h3>
-<p>Consultations regarding cancer diagnosis and treatment planning.</p>
+<p>Cancer diagnosis consultations and treatment planning.</p>
 </div>
-
 <div class="card">
 <img src="https://images.pexels.com/photos/8376193/pexels-photo-8376193.jpeg">
 <h3>Ophthalmology</h3>
 <p>Eye care consultations including cataract surgery and retina treatments.</p>
 </div>
-
 </div>
 </div>
 </section>
-
-<section class="section">
-<div class="container">
-<h2>Leading Hospitals in Mumbai</h2>
-<div class="grid">
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saifee_Hospital_Mumbai.jpg/800px-Saifee_Hospital_Mumbai.jpg">
-<h3>Saifee Hospital</h3>
-<p>Multispecialty hospital in South Mumbai offering diagnostics and surgical services.</p>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Jaslok_Hospital.jpg/800px-Jaslok_Hospital.jpg">
-<h3>Jaslok Hospital</h3>
-<p>Tertiary care hospital known for cardiology and neurology.</p>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Breach_Candy_Hospital.jpg/800px-Breach_Candy_Hospital.jpg">
-<h3>Breach Candy Hospital</h3>
-<p>Private hospital with experienced specialists across disciplines.</p>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Bhatia_Hospital_Mumbai.jpg/800px-Bhatia_Hospital_Mumbai.jpg">
-<h3>Bhatia Hospital</h3>
-<p>Multispecialty hospital providing consultations and treatment across specialties.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-<h2>International Patient Journey</h2>
-<div class="timeline">
-<div class="step">Share medical reports</div>
-<div class="step">Specialist review</div>
-<div class="step">Treatment planning</div>
-<div class="step">Travel & consultation</div>
-<div class="step">Follow-up communication</div>
-</div>
-</div>
-</section>
-
 <footer>
 <p>Independent Medical Facilitation – Mumbai India</p>
-<p style="max-width:800px;margin:auto;font-size:12px;opacity:.8">
-This website provides informational guidance for international patients considering medical consultation in Mumbai hospitals. Diagnosis and treatment decisions are made directly by licensed doctors after clinical evaluation.
-</p>
 </footer>
-
 </body>
 </html>
