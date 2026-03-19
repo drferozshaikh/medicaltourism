@@ -23,14 +23,16 @@
 
 <strong>Mumbai International Patient Services</strong>
 
-<div>
-
+<div id="menu">
 <a href="index.html">Home</a>
 <a href="treatments.html">Treatments</a>
 <a href="hospitals.html">Hospitals</a>
 <a href="patient-journey.html">Patient Journey</a>
 <a href="contact.html">Contact</a>
+</div>
 
+<div class="menu-toggle" onclick="toggleMenu()" id="toggle">
+☰
 </div>
 
 </nav>
@@ -192,7 +194,33 @@ font-weight:bold">
 WhatsApp Inquiry
 
 </a>
+<script>
 
+function toggleMenu() {
+  let menu = document.getElementById("menu");
+  let toggle = document.getElementById("toggle");
+
+  menu.classList.toggle("active");
+
+  if (menu.classList.contains("active")) {
+    toggle.innerHTML = "✖";
+  } else {
+    toggle.innerHTML = "☰";
+  }
+}
+
+// CLOSE MENU WHEN CLICK OUTSIDE
+document.addEventListener("click", function(e) {
+  let menu = document.getElementById("menu");
+  let toggle = document.getElementById("toggle");
+
+  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+    menu.classList.remove("active");
+    toggle.innerHTML = "☰";
+  }
+});
+
+</script>
 </body>
 
 </html>
