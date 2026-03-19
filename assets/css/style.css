@@ -66,8 +66,14 @@ nav strong {
 }
 
 /* ================= HERO ================= */
-.hero{
-background:url('../images/mumbai.jpg') center/cover repeat;
+.hero {
+  height: 320px;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../images/mumbai.jpg') center/cover repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 padding:160px 20px;
 text-align:center;
 color:white;
@@ -75,18 +81,32 @@ background-color:rgba(0,0,0,0.55);
 background-blend-mode:overlay;
 }
 
-.hero h1{
-font-size:42px;
+
+.hero .container {
+  color: #fff;
 }
 
-.btn{
-background:#e0b46a;
-padding:14px 28px;
-border-radius:6px;
-text-decoration:none;
-color:black;
-font-weight:bold;
+.hero h1 {
+  font-size: 34px;
 }
+
+.hero p {
+  margin-top: 10px;
+  color: #eee;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0a66c2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
 
 /* ================= SECTION ================= */
 
