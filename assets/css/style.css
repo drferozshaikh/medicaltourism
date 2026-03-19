@@ -31,7 +31,7 @@ font-weight:500;
 }
 
 .hero{
-background:url('../images/mumbai.jpg') center/cover no-repeat;
+background:url('../images/mumbai.jpg') center/cover repeat;
 padding:160px 20px;
 text-align:center;
 color:white;
