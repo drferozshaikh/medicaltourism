@@ -5,160 +5,255 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medical Tourism Mumbai</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Poppins,sans-serif;background:#f4f8fb;color:#222}
 
-header{
-display:flex;justify-content:space-between;align-items:center;
-padding:15px 30px;background:white;
-box-shadow:0 2px 15px rgba(0,0,0,0.05);
-position:sticky;top:0;z-index:1000;
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fb;
+  color: #222;
 }
 
-header h2{color:#0077b6}
-nav a{margin:0 10px;text-decoration:none;color:#333;font-weight:500}
-
-.hero{
-background:url('https://images.unsplash.com/photo-1580281657527-47d1f1b6cbe5') center/cover;
-height:90vh;display:flex;align-items:center;justify-content:center;
-text-align:center;color:white;
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
-.hero-content{
-background:rgba(0,0,0,0.55);
-padding:40px;border-radius:12px;
+nav h2 {color:#0077b6;}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-.hero h1{font-size:40px;margin-bottom:15px}
-.hero p{margin-bottom:20px}
-
-.btn{
-padding:12px 25px;border-radius:6px;text-decoration:none;
-font-weight:600;margin:5px;display:inline-block;
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-.btn-green{background:#00c853;color:white}
-.btn-white{background:white;color:#0077b6}
+nav ul li a:hover {color:#0077b6;}
 
-.section{padding:70px 20px;text-align:center}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;margin-top:30px;
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('https://images.unsplash.com/photo-1580281657527-47f249e8f9d1?q=80&w=1600');
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
 }
 
-.card{
-background:white;border-radius:15px;
-overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-transition:0.3s;
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
-.card:hover{transform:translateY(-8px)}
+.hero p {font-size:18px; margin-bottom:25px;}
 
-.card img{width:100%;height:180px;object-fit:cover}
-
-.card h3{padding:15px;font-size:18px}
-
-.cta{
-background:linear-gradient(135deg,#0077b6,#00b4d8);
-color:white;padding:60px 20px;
+.btn {
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-form input, form textarea{
-width:100%;padding:12px;margin:10px 0;
-border-radius:6px;border:1px solid #ccc;
+.btn-primary {
+  background: #00c853;
+  color: white;
 }
 
-footer{
-background:#111;color:white;text-align:center;
-padding:20px;margin-top:40px;
+.btn-secondary {
+  background: white;
+  color: #0077b6;
 }
 
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px;border-radius:50%;
-font-size:22px;
+/* SECTIONS */
+.section {
+  padding: 70px 20px;
+  text-align: center;
 }
+
+.section h2 {
+  margin-bottom: 20px;
+  color:#0077b6;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARDS (LIVELY) */
+.card {
+  background: linear-gradient(135deg,#ffffff,#eef6ff);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE SECTION */
+.image-section {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:30px;
+  padding:50px 20px;
+}
+
+.image-section img {
+  width:100%;
+  border-radius:15px;
+  max-width:500px;
+}
+
+.image-section div {
+  flex:1;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg,#0077b6,#00b4d8);
+  color:white;
+  padding:60px 20px;
+  text-align:center;
+}
+
+/* FORM */
+input, button {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button {
+  background:#00c853;
+  color:white;
+  border:none;
+}
+
+/* FOOTER */
+footer {
+  background:#111;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 {font-size:28px;}
+}
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>MedTour Mumbai</h2>
 <nav>
-<a href="index.html">Home</a>
-<a href="treatments.html">Treatments</a>
-<a href="hospitals.html">Hospitals</a>
-<a href="contact.html">Contact</a>
+<h2>MedTour Mumbai</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="treatments.html">Treatments</a></li>
+<li><a href="hospitals.html">Hospitals</a></li>
+<li><a href="patient-journey.html">Journey</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
-</header>
 
 <section class="hero">
-<div class="hero-content">
-<h1>World-Class Treatment in Mumbai</h1>
-<p>Affordable • Trusted • Complete Medical Travel Support</p>
-<a href="contact.html" class="btn btn-green">Free Consultation</a>
-<a href="https://wa.me/919999999999" class="btn btn-white">WhatsApp</a>
+<div>
+<h1>Affordable World-Class Treatment in Mumbai</h1>
+<p>We handle everything — consultation, hospital, travel & recovery</p>
+<a href="contact.html" class="btn btn-primary">Free Consultation</a>
+<a href="https://wa.me/919999999999" class="btn btn-secondary">WhatsApp Now</a>
 </div>
 </section>
 
 <section class="section">
 <h2>Why Choose Mumbai?</h2>
-<div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3">
-<h3>Save up to 80% Cost</h3>
+<div class="grid">
+<div class="card">Save up to 80% cost</div>
+<div class="card">Top hospitals & doctors</div>
+<div class="card">No waiting time</div>
+<div class="card">International patient care</div>
 </div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67">
-<h3>Top Doctors</h3>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
-<h3>No Waiting Time</h3>
-</div>
+</section>
+
+<section class="image-section">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Kokilaben_Hospital_Mumbai.jpg">
+<div>
+<h2>World-Class Hospitals</h2>
+<p>We work with trusted hospitals in Mumbai offering advanced medical care with international standards.</p>
 </div>
 </section>
 
 <section class="section">
 <h2>Our Services</h2>
-<div class="cards">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54">
-<h3>Consultation & Planning</h3>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1576765607924-b07d8f61a63e">
-<h3>Hospital Booking</h3>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1502920917128-1aa500764ce7">
-<h3>Travel & Stay</h3>
-</div>
+<div class="grid">
+<div class="card">Doctor Consultation</div>
+<div class="card">Hospital Booking</div>
+<div class="card">Visa Assistance</div>
+<div class="card">Travel & Stay</div>
 </div>
 </section>
 
 <section class="cta">
 <h2>Start Your Treatment Journey Today</h2>
 <p>Talk to our experts now</p>
-<a href="https://wa.me/919999999999" class="btn btn-green">WhatsApp Now</a>
+<a href="https://wa.me/919999999999" class="btn btn-primary">WhatsApp Now</a>
 </section>
 
 <section class="section">
 <h2>Contact Us</h2>
 <form>
-<input type="text" placeholder="Name" required>
+<input type="text" placeholder="Your Name" required>
 <input type="text" placeholder="Country">
 <input type="text" placeholder="Treatment Needed">
 <input type="text" placeholder="WhatsApp Number">
-<button class="btn btn-green">Submit</button>
+<button>Submit</button>
 </form>
 </section>
 
