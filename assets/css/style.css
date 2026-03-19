@@ -70,40 +70,49 @@ nav strong {
   height: 320px;
   background:rgba(0,0,0,0.55)),
               url('../images/mumbai.jpg') center/cover repeat;
-  background-size: cover;
-  background-position: center;
-padding:160px 20px;
-text-align:center;
-color:white;
-background-blend-mode:overlay;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:100px 20px 80px;
+  background:linear-gradient(135deg,#eef5ff,#f8fbff);
 }
 
-
-.hero .container {
-  color: #fff;
+.hero h1{
+  font-size:42px;
+  max-width:800px;
+  margin:auto;
 }
 
-.hero h1 {
-  font-size: 34px;
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+  color:#555;
 }
 
-.hero p {
-  margin-top: 10px;
-  color: #eee;
+.btn{
+  padding:12px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+  font-weight:600;
 }
 
-/* ================= BUTTON ================= */
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #0a66c2;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
+.btn-primary{
+  background:#0a66c2;
+  color:white;
 }
 
+.btn-primary:hover{
+  background:#084c96;
+}
+
+.btn-outline{
+  border:2px solid #0a66c2;
+  color:#0a66c2;
+}
+  
 
 /* ================= SECTION ================= */
 
