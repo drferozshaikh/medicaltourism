@@ -1,5 +1,5 @@
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 margin:0;
 background:#f4f7fb;
 color:#222;
@@ -33,15 +33,14 @@ font-weight:500;
 .hero{
 background:url('../images/mumbai.jpg') center/cover no-repeat;
 padding:160px 20px;
-color:white;
 text-align:center;
-background-blend-mode:overlay;
+color:white;
 background-color:rgba(0,0,0,0.55);
+background-blend-mode:overlay;
 }
 
 .hero h1{
 font-size:42px;
-margin-bottom:10px;
 }
 
 .btn{
@@ -61,7 +60,6 @@ padding:70px 0;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
-margin-top:30px;
 }
 
 .card{
@@ -69,11 +67,6 @@ background:white;
 border-radius:10px;
 padding:20px;
 box-shadow:0 6px 20px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
 }
 
 .card img{
