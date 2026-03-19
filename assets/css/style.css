@@ -1,20 +1,31 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY */
 body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
   color: #1a1a1a;
+  line-height: 1.6;
 }
 
-/* NAVBAR */
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= NAVBAR ================= */
+
 header {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: #ffffff;
   z-index: 1000;
   border-bottom: 1px solid #eee;
 }
@@ -31,18 +42,19 @@ nav strong {
   font-size: 18px;
 }
 
-nav div {
+/* MENU */
+#menu {
   display: flex;
   gap: 20px;
 }
 
-nav a {
+#menu a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
 }
 
-nav a:hover {
+#menu a:hover {
   color: #0a66c2;
 }
 
@@ -53,23 +65,33 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
-  padding: 80px 20px;
+  height: 300px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../images/mumbai.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #eef5ff, #f8fbff);
+  color: #fff;
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .hero p {
   margin-top: 10px;
-  color: #555;
+  font-size: 16px;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
+
 .btn {
   display: inline-block;
   margin-top: 15px;
@@ -80,17 +102,19 @@ nav a:hover {
   text-decoration: none;
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
+
 .section {
   padding: 60px 20px;
+  text-align: center;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
+.section h2 {
+  margin-bottom: 10px;
 }
 
-/* GRID */
+/* ================= GRID ================= */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -98,9 +122,10 @@ nav a:hover {
   margin-top: 30px;
 }
 
-/* CARD */
+/* ================= CARD ================= */
+
 .card {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -118,7 +143,35 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-/* FOOTER */
+/* ================= HOSPITAL SECTION ================= */
+
+.hospital {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.hospital img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.hospital-content {
+  flex: 1;
+}
+
+/* ================= IMAGES SAFETY ================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= FOOTER ================= */
+
 footer {
   background: #111;
   color: white;
@@ -126,7 +179,8 @@ footer {
   padding: 20px;
 }
 
-/* WHATSAPP */
+/* ================= WHATSAPP ================= */
+
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -137,29 +191,41 @@ footer {
   border-radius: 40px;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* MOBILE */
-@media(max-width: 768px) {
+/* ================= MOBILE ================= */
 
-  nav div {
+@media (max-width: 768px) {
+
+  /* MENU */
+  #menu {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 75%;
     height: 100%;
-    background: white;
+    background: #ffffff;
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 80px 20px;
     transition: 0.3s;
   }
 
-  nav div.active {
+  #menu.active {
     right: 0;
   }
 
   .menu-toggle {
     display: block;
+  }
+
+  /* HERO */
+  .hero {
+    height: 250px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
   }
 
 }
