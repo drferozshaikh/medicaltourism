@@ -69,7 +69,7 @@ nav strong {
 .hero{
 background:url('../images/mumbai.jpg') center/cover repeat;
 padding:160px 20px;
-text-align:center;
+text-align:flex;
 color:white;
 background-color:rgba(0,0,0,0.55);
 background-blend-mode:overlay;
