@@ -109,16 +109,6 @@ nav ul{display:flex;list-style:none;gap:25px;}
 nav a{text-decoration:none;color:#333;font-weight:500;}
 nav a:hover{color:#0a66c2;}
 
-/* HERO */
-.hero{
-  text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#eef5ff,#f8fbff);
-}
-
-.hero h1{font-size:38px;}
-.hero p{margin-top:10px;color:#555;}
-
 /* SECTION */
 .section{
   padding:60px 20px;
