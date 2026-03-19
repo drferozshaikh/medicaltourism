@@ -194,10 +194,10 @@ WhatsApp Inquiry
 </a>
 <script>
 
-function toggleMenu() {
-  let menu = document.getElementById("menu");
-  let toggle = document.getElementById("toggle");
+const toggle = document.getElementById("toggle");
+const menu = document.getElementById("menu");
 
+toggle.addEventListener("click", function () {
   menu.classList.toggle("active");
 
   if (menu.classList.contains("active")) {
@@ -205,13 +205,9 @@ function toggleMenu() {
   } else {
     toggle.innerHTML = "☰";
   }
-}
+});
 
-// CLOSE MENU WHEN CLICK OUTSIDE
 document.addEventListener("click", function(e) {
-  let menu = document.getElementById("menu");
-  let toggle = document.getElementById("toggle");
-
   if (!menu.contains(e.target) && !toggle.contains(e.target)) {
     menu.classList.remove("active");
     toggle.innerHTML = "☰";
