@@ -76,7 +76,7 @@ nav strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   color: #fff;
   padding: 20px;
 }
@@ -149,7 +149,7 @@ nav strong {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  align-items: center;
+  align-items: left;
   margin-bottom: 50px;
 }
 
