@@ -66,29 +66,19 @@ nav strong {
 }
 
 /* ================= HERO ================= */
-
-.hero {
-  height: 320px;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url('../images/mumbai.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
+.hero{
+background:url('../images/mumbai.jpg') center/cover repeat;
+padding:160px 20px;
+text-align:center;
+color:white;
+background-color:rgba(0,0,0,0.55);
+background-blend-mode:overlay;
 }
 
-.hero .container {
-  color: #fff;
+.hero h1{
+font-size:42px;
 }
 
-.hero h1 {
-  font-size: 34px;
-}
-
-.hero p {
-  margin-top: 10px;
-  color: #eee;
-}
 
 /* ================= BUTTON ================= */
 
