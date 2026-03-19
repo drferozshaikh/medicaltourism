@@ -192,29 +192,7 @@ font-weight:bold">
 WhatsApp Inquiry
 
 </a>
-<script>
-
-const toggle = document.getElementById("toggle");
-const menu = document.getElementById("menu");
-
-toggle.addEventListener("click", function () {
-  menu.classList.toggle("active");
-
-  if (menu.classList.contains("active")) {
-    toggle.innerHTML = "✖";
-  } else {
-    toggle.innerHTML = "☰";
-  }
-});
-
-document.addEventListener("click", function(e) {
-  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
-    menu.classList.remove("active");
-    toggle.innerHTML = "☰";
-  }
-});
-
-</script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
