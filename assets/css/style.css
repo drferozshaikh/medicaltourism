@@ -147,23 +147,48 @@ h1, h2, h3, p {
 }
 
 /* ================= HOSPITAL ================= */
-
-.hospital {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  align-items: center;
-  margin-bottom: 50px;
+/* HOSPITAL CARD */
+.hospital{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  margin-bottom:60px;
+  align-items:center;
 }
 
-.hospital img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
+.hospital img{
+  width:100%;
+  max-width:450px;
+  border-radius:12px;
 }
 
-.hospital-content {
-  flex: 1;
+.hospital-content{
+  flex:1;
+}
+
+.hospital h2{
+  color:#0a66c2;
+  margin-bottom:10px;
+}
+
+.hospital p{
+  color:#555;
+  margin-bottom:10px;
+}
+
+ul{
+  padding-left:18px;
+}
+
+li{
+  margin-bottom:6px;
+}
+
+/* SERVICES */
+.services{
+  background:#f7faff;
+  padding:50px 20px;
+  text-align:center;
 }
 
 /* ================= IMAGES ================= */
