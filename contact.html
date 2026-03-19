@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html>
+<form action="https://formsubmit.co/your@email.com" method="POST"><h2>Submit Medical Case for Review</h2><p>Share medical reports to receive guidance regarding specialist
+consultation and treatment options in Mumbai.
 
-<head>
+</p><br><label>Patient Name</label>
 
-<title>Contact Medical Consultation</title>
+<input type="text" name="name" required><label>Country of Residence</label>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<select name="country"><option>United Arab Emirates</option>
+<option>Saudi Arabia</option>
+<option>Oman</option>
+<option>Qatar</option>
+<option>Nigeria</option>
+<option>Kenya</option>
+<option>Tanzania</option>
+<option>Other</option></select><label>Patient Age</label>
 
-</head>
+<input type="number" name="age"><label>Medical Condition</label>
 
-<body>
+<textarea name="condition" rows="4"></textarea><label>Medical Reports Link (Google Drive / Dropbox)</label>
 
-<div class="container">
+<input type="text" name="reports"><label>Preferred Contact Method</label>
 
-<h2>Submit Medical Case</h2>
-
-<form action="https://formsubmit.co/your@email.com" method="POST">
-
-<input type="text" name="name" placeholder="Full Name" required>
-
-<input type="text" name="country" placeholder="Country">
-
-<textarea name="condition" placeholder="Medical condition"></textarea>
-
-<input type="text" name="reports" placeholder="Link to medical reports">
-
-<button class="btn">Submit Inquiry</button>
+<select name="contact"><option>WhatsApp</option>
+<option>Email</option></select><button class="btn">Submit Medical Inquiry</button>
 
 </form>
-
-</div>
-
-</body>
-</html>
