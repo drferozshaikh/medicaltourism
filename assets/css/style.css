@@ -68,16 +68,13 @@ nav strong {
 /* ================= HERO ================= */
 .hero {
   height: 320px;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  background:rgba(0,0,0,0.55)),
               url('../images/mumbai.jpg') center/cover repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
 padding:160px 20px;
 text-align:center;
 color:white;
-background-color:rgba(0,0,0,0.55);
 background-blend-mode:overlay;
 }
 
