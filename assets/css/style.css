@@ -66,19 +66,41 @@ nav strong {
 }
 
 /* ================= HERO ================= */
-.hero{
-background:url('../images/mumbai.jpg') center/cover repeat;
-padding:160px 20px;
-text-align:center;
-color:white;
-background-color:rgba(0,0,0,0.55);
-background-blend-mode:overlay;
+.hero {
+  height: 350px;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../images/mumbai.jpg');
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+
+  text-align: center;
+  padding: 20px;
 }
 
-.hero h1{
-font-size:42px;
+/* CENTER CONTENT BLOCK */
+.hero .container {
+  max-width: 700px;
+  color: #fff;
 }
 
+/* TEXT */
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  margin-top: 12px;
+  color: #eee;
+}
+
+/* BUTTON */
+.hero .btn {
+  margin-top: 20px;
+}
 
 /* ================= BUTTON ================= */
 
@@ -229,12 +251,18 @@ footer {
   }
 
   /* HERO */
+@media (max-width: 768px) {
+
   .hero {
-    height: 260px;
+    height: 300px;
   }
 
   .hero h1 {
     font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
   }
 
 }
