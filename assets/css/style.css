@@ -96,7 +96,11 @@ nav strong {
   margin-top: 12px;
   color: #eee;
 }
-
+.hero h1,
+.hero p {
+  color: #ffffff !important;
+  text-align: center;
+}
 /* BUTTON */
 .hero .btn {
   margin-top: 20px;
@@ -119,8 +123,13 @@ nav strong {
 .section {
   padding: 60px 20px;
 }
+.section {
+  text-align: left;
+}
 
-
+.hero {
+  text-align: center;
+}
 /* ================= GRID ================= */
 
 .grid {
