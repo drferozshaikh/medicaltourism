@@ -253,3 +253,18 @@ footer {
   }
 
 }
+/* ICON FIX (for patient journey) */
+.card img.icon {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .card img.icon {
+    height: 50px;
+    width: 50px;
+  }
+}
