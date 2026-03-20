@@ -10,12 +10,38 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+<style>
+
+/* FORM IMPROVEMENT */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* FLEX LAYOUT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media(max-width:768px){
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-
 <nav class="container">
 
 <strong>Mumbai International Patient Services</strong>
@@ -31,31 +57,28 @@
 <div class="menu-toggle" id="toggle">☰</div>
 
 </nav>
-
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1>Contact for Medical Consultation</h1>
-    <p>Share your details and get guidance from specialists in Mumbai</p>
+    <p>Share your details and get expert guidance for treatment in Mumbai</p>
   </div>
 </section>
 
-<!-- MAIN CONTACT BLOCK -->
+<!-- MAIN SECTION -->
 <section class="container section">
 
-<div style="
-background:#f7f9fc;
-padding:40px;
-border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,0.05);
-">
+<div class="contact-grid">
 
-<h2 style="margin-bottom:10px;">Submit Your Medical Details</h2>
+<!-- FORM -->
+<div style="background:#f7f9fc;padding:35px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.05);">
 
-<p style="margin-bottom:20px;color:#555;">
-Our team will review your case and connect you with the right hospital and specialist.
+<h2>Submit Your Medical Details</h2>
+
+<p style="margin:10px 0 20px;color:#555;">
+Our team will review your case and guide you step-by-step.
 </p>
 
 <form>
@@ -65,8 +88,7 @@ Our team will review your case and connect you with the right hospital and speci
 <input type="text" placeholder="Treatment Needed">
 <input type="text" placeholder="WhatsApp Number" required>
 
-<textarea placeholder="Brief Medical History / Message"
-style="width:100%;padding:12px;margin-top:10px;border-radius:6px;border:1px solid #ccc;"></textarea>
+<textarea rows="4" placeholder="Brief Medical History / Message"></textarea>
 
 <button class="btn">Submit</button>
 
@@ -74,23 +96,45 @@ style="width:100%;padding:12px;margin-top:10px;border-radius:6px;border:1px soli
 
 </div>
 
+<!-- TRUST + INFO -->
+<div style="padding:20px;">
+
+<h2>Why Contact Us?</h2>
+
+<ul style="margin-top:15px;line-height:1.8;">
+<li>✔ Guidance from experienced specialists</li>
+<li>✔ Support with hospital selection</li>
+<li>✔ Assistance with travel and stay</li>
+<li>✔ Personalized treatment planning</li>
+<li>✔ Support throughout your journey</li>
+</ul>
+
+<br>
+
+<div style="background:#0a66c2;color:white;padding:25px;border-radius:10px;">
+
+<h3>Quick Response</h3>
+<p style="margin-top:8px;">
+We usually respond within 24 hours after reviewing your reports.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- WHATSAPP SECTION -->
+<!-- WHATSAPP CTA -->
 <section class="container section">
 
-<div style="
-background:#0a66c2;
-color:white;
-padding:40px;
-border-radius:12px;
-text-align:center;
-">
+<div style="background:#0a66c2;color:white;padding:45px;border-radius:12px;text-align:center;">
 
 <h2>Prefer WhatsApp?</h2>
 
 <p style="margin-top:10px;">
-Chat directly with our team for faster response and consultation.
+Get faster response by chatting directly with our team.
 </p>
 
 <a class="btn" href="https://wa.me/917700913411" style="background:white;color:#0a66c2;margin-top:20px;">
@@ -101,6 +145,7 @@ Chat on WhatsApp
 
 </section>
 
+<!-- FOOTER -->
 <footer>
 
 <p>Independent Medical Facilitation – Mumbai India</p>
@@ -111,8 +156,9 @@ Medical advice and treatment decisions are made by licensed doctors.
 
 </footer>
 
+<!-- FLOATING BUTTON -->
 <a href="https://wa.me/917700913411" class="whatsapp">
-WhatsApp
+💬
 </a>
 
 <script src="assets/js/script.js"></script>
