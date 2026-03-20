@@ -102,7 +102,24 @@ font-size:42px;
 h1, h2, h3, p {
   text-align: left;
 }
+/* REMOVE GLOBAL CENTERING ISSUE */
 
+.section {
+  padding: 60px 20px;
+}
+
+/* ONLY center where needed */
+.hero {
+  text-align: center;
+}
+
+/* DEFAULT TEXT LEFT */
+.container,
+p,
+h2,
+h3 {
+  text-align: left;
+}
 /* ================= GRID ================= */
 
 .grid {
