@@ -151,8 +151,6 @@ nav strong {
   object-fit: contain;
   background: #f7f9fc;
   padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
   transition: 0.3s;
 }
 
